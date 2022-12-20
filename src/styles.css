@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* App.js styles*/
+.form  {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    margin-right: 100px;
+    padding: 30px;
+    border-style: inset;
+}
+
+.main-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Resume.js styles */
+span {
+    font-size: 30px;
+}
+.resume {
+    display: flex;
+    margin-top: 80px;
+    width: 600px;
+    height: 775px;
+    border-style:outset;
+    border-color: black;
+    border-width: 1px;
+}
+
+.left-side {
+background-color:rgb(240, 224, 2);
+max-width: 180px;
+width: 200px;
+
+}
+
+.left-side div {
+    padding-bottom: 5px;
+    
+}
+
+.right-side {
+    max-width:max-content;
+    width:fit-content;
+    margin-left: 10px;
+}
+
+.center-border {
+    width:410px;
+    text-align: center;
+   border-bottom: 3px solid rgb(190, 178, 0);
+}
+
+.add-button {
+    background: rgb(190, 171, 0);
+    color: white;
+    border-radius: 5px;
+}
+
+.bold-face {
+    font-weight: bold;
+}
+
+.italics {
+    font-style: italic;
+}
+
+input {
+    border-radius: 5px;
+}
+
+@media (max-width: 980px) {
+    .main-container {
+        flex-direction: column;
+    }
+}
