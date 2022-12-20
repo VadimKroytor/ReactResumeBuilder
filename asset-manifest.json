@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/ReactResumeBuilder/static/css/main.0cc76fbc.css",
+    "main.js": "/ReactResumeBuilder/static/js/main.8e468e5f.js",
+    "index.html": "/ReactResumeBuilder/index.html",
+    "main.0cc76fbc.css.map": "/ReactResumeBuilder/static/css/main.0cc76fbc.css.map",
+    "main.8e468e5f.js.map": "/ReactResumeBuilder/static/js/main.8e468e5f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0cc76fbc.css",
+    "static/js/main.8e468e5f.js"
+  ]
+}
