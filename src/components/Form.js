@@ -10,7 +10,7 @@ class Form extends Component {
       name: 'Vadim Kroytor',
       email: 'vadimkroytor@gmail.com',
       phoneNum: '(647)280-4257',
-      resSum: `Hi, my name is Vadim Kroytor I build websites. I am
+      resSum: `Hi, my name is Vadim Kroytor. I build websites. I am
       a full-stack developer who graduated in Computer Science
      at York University.`,
 
@@ -62,68 +62,74 @@ class Form extends Component {
   render() {
     const { name, email, phoneNum, schoolName, program, dateOfStudy, resSum,
       currentJobTitle, compName, compTitle, jobTasks, dateStarted, dateEnded,
-      compName2, compTitle2, jobTasks2, dateStarted2, dateEnded2} = this.state;
+      compName2, compTitle2, jobTasks2, dateStarted2, dateEnded2 } = this.state;
     return (
       <div className="main-container">
+        <nav className="navbar">
+          <div>
+            <p> Resume Builder</p>
+          </div>
+        </nav>
+
         <form className="form">
+          <div>
+            <h3> General Information</h3>
 
-          <h3> General Information</h3>
+            <label htmlFor="name">Name</label>
+            <input type="text" onChange={this.handleInputChange} name="name" id="name"></input>
 
-          <label htmlFor="name">Name</label>
-          <input type="text" onChange={this.handleInputChange} name="name" id="name"></input>
+            <label htmlFor="email">Email</label>
+            <input type="text" onChange={this.handleInputChange} name="email" id="email"></input>
 
-          <label htmlFor="email">Email</label>
-          <input type="text" onChange={this.handleInputChange} name="email" id="email"></input>
+            <label htmlFor="phoneNum">Phone Number</label>
+            <input type="text" onChange={this.handleInputChange} name="phoneNum" id="phoneNum"></input>
 
-          <label htmlFor="phoneNum">Phone Number</label>
-          <input type="text" onChange={this.handleInputChange} name="phoneNum" id="phoneNum"></input>
+            <label htmlFor="resSum">Resume Summary</label>
+            <textarea onChange={this.handleInputChange} name="resSum" id="resSum"></textarea>
+            
+            <h3> Educational Experience</h3>
+            <label htmlFor="schoolName">School Name</label>
+            <input type="text" onChange={this.handleInputChange} name="schoolName" id="schoolName"></input>
 
-          <label htmlFor="resSum">Resume Summary</label>
-          <input type="text" onChange={this.handleInputChange} name="resSum" id="resSum"></input>
+            <label htmlFor="program">Program</label>
+            <input type="text" onChange={this.handleInputChange} name="program" id="program"></input>
 
+            <label htmlFor="dateOfStudy">Date of Study</label>
+            <input type="text" onChange={this.handleInputChange} name="dateOfStudy" id="dateOfStudy"></input>
+          </div>
+          <div>
+            <h3> Practical Experience #1</h3>
+            <label htmlFor="compName">Company Name</label>
+            <input type="text" onChange={this.handleInputChange} name="compName" id="companyName"></input>
 
+            <label htmlFor="compTitle">Job Title</label>
+            <input type="text" onChange={this.handleInputChange} name="compTitle" id="jobTitle"></input>
 
-          <h3> Educational Experience</h3>
-          <label htmlFor="schoolName">School Name</label>
-          <input type="text" onChange={this.handleInputChange} name="schoolName" id="schoolName"></input>
+            <label htmlFor="jobTasks">Job Tasks</label>
+            <input type="text" onChange={this.handleInputChange} name="jobTasks" id="jobTasks"></input>
 
-          <label htmlFor="program">Program</label>
-          <input type="text" onChange={this.handleInputChange} name="program" id="program"></input>
+            <label htmlFor="dateStarted">Date Started</label>
+            <input type="text" onChange={this.handleInputChange} name="dateStarted" id="dateStarted"></input>
 
-          <label htmlFor="dateOfStudy">Date of Study</label>
-          <input type="text" onChange={this.handleInputChange} name="dateOfStudy" id="dateOfStudy"></input>
+            <label htmlFor="dateEnded">Date Ended</label>
+            <input type="text" onChange={this.handleInputChange} name="dateEnded" id="dateEnded"></input>
 
-          <h3> Practical Experience #1</h3>
-          <label htmlFor="compName">Company Name</label>
-          <input type="text" onChange={this.handleInputChange} name="compName" id="companyName"></input>
+            <h3> Practical Experience #2</h3>
+            <label htmlFor="compName2">Company Name</label>
+            <input type="text" onChange={this.handleInputChange} name="compName2" id="companyName"></input>
 
-          <label htmlFor="compTitle">Job Title</label>
-          <input type="text" onChange={this.handleInputChange} name="compTitle" id="jobTitle"></input>
+            <label htmlFor="compTitle2">Job Title</label>
+            <input type="text" onChange={this.handleInputChange} name="compTitle2" id="jobTitle"></input>
 
-          <label htmlFor="jobTasks">Job Tasks</label>
-          <input type="text" onChange={this.handleInputChange} name="jobTasks" id="jobTasks"></input>
+            <label htmlFor="jobTasks2">Job Tasks</label>
+            <input type="text" onChange={this.handleInputChange} name="jobTasks2" id="jobTasks"></input>
 
-          <label htmlFor="dateStarted">Date Started</label>
-          <input type="text" onChange={this.handleInputChange} name="dateStarted" id="dateStarted"></input>
+            <label htmlFor="dateStarted2">Date Started</label>
+            <input type="text" onChange={this.handleInputChange} name="dateStarted2" id="dateStarted"></input>
 
-          <label htmlFor="dateEnded">Date Ended</label>
-          <input type="text" onChange={this.handleInputChange} name="dateEnded" id="dateEnded"></input>
-          
-          <h3> Practical Experience #2</h3>
-          <label htmlFor="compName2">Company Name</label>
-          <input type="text" onChange={this.handleInputChange} name="compName2" id="companyName"></input>
-
-          <label htmlFor="compTitle2">Job Title</label>
-          <input type="text" onChange={this.handleInputChange} name="compTitle2" id="jobTitle"></input>
-
-          <label htmlFor="jobTasks2">Job Tasks</label>
-          <input type="text" onChange={this.handleInputChange} name="jobTasks2" id="jobTasks"></input>
-
-          <label htmlFor="dateStarted2">Date Started</label>
-          <input type="text" onChange={this.handleInputChange} name="dateStarted2" id="dateStarted"></input>
-
-          <label htmlFor="dateEnded2">Date Ended</label>
-          <input type="text" onChange={this.handleInputChange} name="dateEnded2" id="dateEnded"></input>
+            <label htmlFor="dateEnded2">Date Ended</label>
+            <input type="text" onChange={this.handleInputChange} name="dateEnded2" id="dateEnded"></input>
+          </div>
           {/*
           <input type="button" className="add-button" onclick={this.handleAddButton} value="Add"></input>
           {this.state.practicalExp.map((section) => {
@@ -135,7 +141,7 @@ class Form extends Component {
           <Resume
             name={name} email={email} phoneNum={phoneNum} resSum={resSum} schoolName={schoolName} program={program}
             dateOfStudy={dateOfStudy} compName={compName} compTitle={compTitle} jobTasks={jobTasks}
-            dateStarted={dateStarted} dateEnded={dateEnded} currentJobTitle={currentJobTitle} compName2={compName2} 
+            dateStarted={dateStarted} dateEnded={dateEnded} currentJobTitle={currentJobTitle} compName2={compName2}
             compTitle2={compTitle2} jobTasks2={jobTasks2} dateStarted2={dateStarted2} dateEnded2={dateEnded2} />
         </div>
       </div>
